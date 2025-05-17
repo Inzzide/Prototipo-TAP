@@ -1,0 +1,290 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/*.formulario {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}*/
+
+.formulario {
+    width: fit-content;
+    max-width: 105%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+/*Formulario*/
+@media (max-width: 768px) {
+    .tabla th, .tabla td {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .formulario {
+        padding: 15px;
+    }
+
+    .boton,
+    .boton-rojo,
+    .boton.verde {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .input-hora {
+        width: 80px;
+    }
+}
+
+
+.formulario h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.formulario label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario .boton {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #28a745;
+}
+
+.formulario .boton:hover {
+    background-color: #218838;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.tabla th {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/*tabla de productos*/
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.tabla th {
+    background-color: #007bff;
+    color: white;
+}
+
+
+/* formulario de informes para filtrar*/
+
+.filtro-form {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.filtro-form label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.filtro-form select,
+.filtro-form input[type="date"] {
+    margin-right: 20px;
+    padding: 5px;
+}
+
+/* Estilo Del Login */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #f3f3f3;
+}
+
+.login-box {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.login-box label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.boton-login {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.boton-login:hover {
+    background-color: #0056b3;
+}
+
+/* boton de eliminar*/
+.boton-rojo {
+    background-color: #d9534f;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.boton-rojo:hover {
+    background-color: #c9302c;
+}
+
+.input-hora {
+    width: 100px;
+    padding: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Boton guardar */
+.boton.verde {
+    background-color: #28a745;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.boton.verde:hover {
+    background-color: #218838;
+}
+
+.form-asistencia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.tabla td.acciones {
+    white-space: nowrap;
+    min-width: 150px;
+}
+
+/*Boton buscar*/
+
+.form-busqueda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.botones-busqueda {
+    display: flex;
+    gap: 10px;
+}
+
+.acciones-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
