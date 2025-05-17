@@ -47,34 +47,58 @@ Este prototipo fue desarrollado como parte de un trabajo práctico para gestiona
 - Registro de productos deteriorados o no utilizables.
 - No requiere identificación del trabajador, pero sí usuario registrado.
 
----
+## 📁 Estructura de Carpetas del Proyecto
 
-## 🗂 Estructura de carpetas
-
-Control_Produccion/
+```
+CONTROL_PRODUCCION/
 ├── app/
-│ ├── controllers/
-│ ├── models/
-│ ├── views/
-│ │ ├── home/
-│ │ ├── login/
-│ │ ├── entrada/
-│ │ ├── informes/
-│ │ ├── mermas/
-│ │ └── templates/
-│ ├── config/
-│ │ └── db.php
-│ └── core/
-│ └── App.php
+│   ├── controllers/
+│   │   ├── AsignacionController.php
+│   │   ├── ConsultasController.php
+│   │   ├── EntradaController.php
+│   │   ├── HomeController.php
+│   │   ├── InformesController.php
+│   │   ├── LoginController.php
+│   │   └── MermasController.php
+│   ├── models/
+│   └── views/
+│       ├── asignacion/
+│       │   └── crear.php
+│       ├── consultas/
+│       │   └── index.php
+│       ├── entrada/
+│       │   ├── asistencias.php
+│       │   ├── productos_lista.php
+│       │   ├── productos.php
+│       │   ├── trabajadores_lista.php
+│       │   └── trabajadores.php
+│       ├── home/
+│       │   ├── admin.php
+│       │   └── trabajador.php
+│       ├── informes/
+│       │   ├── crear.php
+│       │   └── index.php
+│       ├── login/
+│       │   └── index.php
+│       └── mermas/
+│           ├── crear.php
+│           └── index.php
+├── templates/
+│   ├── footer.php
+│   ├── header.php
+│   ├── entrada.php
+│   └── inicio.php
+├── config/
+│   └── db.php
+├── core/
+│   └── App.php
 ├── public/
-│ ├── css/
-│ │ └── estilo.css
-│ └── index.php
-├── .htaccess
-└── README.txt
+│   ├── css/
+│   ├── .htaccess
+│   ├── index.php
+│   └── README.md
+```
 
-
----
 
 ## 💾 Base de datos
 
